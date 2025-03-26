@@ -1,0 +1,198 @@
+/* Haut du site : Menu et logo en bleu */
+#site-header.minimal-header.clr, .header-background {
+    background-color: #0073E6 !important; /* Bleu intense */
+    color: white !important;
+}
+
+/* Navigation - Boutons et liens */
+nav ul li a, #menu a, .menu a {
+    background-color: #0079FF !important; /* Bleu vif */
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover, .menu a:hover {
+    background-color: #0056B3 !important; /* Bleu foncé au survol */
+}
+
+/* Bas de page et contenu principal - Fond gris */
+body {
+    background-color: #F0F0F0 !important; /* Gris clair pour une meilleure lisibilité */
+    color: #333 !important; /* Texte en gris foncé pour plus de contraste */
+}
+
+/* Cartes produits et textes en noir pour lisibilité */
+.woocommerce ul.products li.product,
+.woocommerce div.product,
+.woocommerce .product-title {
+    background-color: #FFF !important; /* Fond blanc pour les éléments clés */
+    color: #222 !important; /* Texte noir pour meilleure lisibilité */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Changer la couleur des prix */
+.woocommerce ul.products li.product .price {
+    color: #0073E6 !important; /* Bleu pour mettre en valeur */
+    font-weight: bold;
+}
+
+/* Conteneur du slogan en gris clair */
+.slogan-container {
+    background-color: #E0E0E0 !important; /* Gris doux */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Texte du slogan en bleu foncé pour contraster */
+h1, h2, h3, .slogan, .slogan + p {
+    color: #0073E6 !important; /* Bleu foncé */
+    font-weight: bold;
+}
+/* Ajustement du slider */
+.slider-container {
+    width: 100% !important; /* Utiliser toute la largeur */
+    max-width: 1200px; /* Ajustable selon le design */
+    margin: 0 auto; /* Centrer le slider */
+    display: block;
+}
+
+/* Placer le slider juste sous le menu */
+#site-header + .slider-container {
+    margin-top: 0px !important; /* Supprime l’espace vide */
+}
+
+/* Ajuster l’espace du titre pour éviter qu’il soit trop bas */
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Amélioration de la mise en page pour éviter un trop grand espace vide */
+.main-content {
+    padding-top: 10px;
+}
+
+/* Personnalisation du formulaire */
+.wpcf7-form {
+    background-color: #f5f5f5; /* Couleur de fond */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Champs du formulaire */
+.wpcf7-form input, 
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton d'envoi */
+.wpcf7-form input[type="submit"] {
+    background-color: #ff6600; /* Adapte à ton thème */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background-color: #cc5500;
+}
+
+.contact-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.wpcf7-form p {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.wpcf7-submit {
+    width: auto;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ff6600; /* Remplace par ta couleur principale */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+.wpcf7-form input:focus, .wpcf7-form textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    position: fixed; /* Fixe la barre en haut */
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Fond blanc */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    padding: 10px 20px;
+}
+body {
+    padding-top: 60px; /* Évite que le contenu soit caché sous la navbar */
+}
